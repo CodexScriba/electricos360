@@ -8,7 +8,7 @@ interface NavbarLogoProps {
 	height: number;
 }
 
-const Navbarlogo: React.FC<NavbarLogoProps> = ({ src, alt, width, height }) => {
+const NavbarLogo: React.FC<NavbarLogoProps> = ({ src, alt, width, height }) => {
 	return (
 		<Link href="/" className="flex items-center gap-2">
 			<Image
@@ -22,4 +22,4 @@ const Navbarlogo: React.FC<NavbarLogoProps> = ({ src, alt, width, height }) => {
 	);
 };
 
-export default Navbarlogo;
+export default NavbarLogo;
