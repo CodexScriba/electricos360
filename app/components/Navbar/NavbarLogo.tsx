@@ -1,7 +1,25 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-const NavbarLogo = () => {
-	return <div>NavbarLogo</div>;
+interface NavbarLogoProps {
+	src: string;
+	alt: string;
+	width: number;
+	height: number;
+}
+
+const Navbarlogo: React.FC<NavbarLogoProps> = ({ src, alt, width, height }) => {
+	return (
+		<Link href="/" className="flex items-center gap-2">
+			<Image
+				src={src}
+				alt={alt}
+				width={width}
+				height={height}
+				className="object-contain"
+			/>
+		</Link>
+	);
 };
 
-export default NavbarLogo;
+export default Navbarlogo;
