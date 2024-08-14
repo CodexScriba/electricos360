@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: "Electricos360",
+	title: "ElectroAuto360",
 	description:
 		"Encuentra tu auto soñado con reseñas de usuarios, herramientas inteligentes y datos de precios.",
 };
