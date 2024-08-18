@@ -1,3 +1,6 @@
+//app/components/Navbar/Navbar.tsx
+//Todo: Separate the arrays, create a reusable component for single link, stock links and buttons.
+
 import React from "react";
 import Link from "next/link";
 import NavbarLogo from "./NavbarLogo";

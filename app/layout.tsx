@@ -1,11 +1,8 @@
 //app/layout.tsx
-
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -16,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
 	title: "ElectroAuto360",
 	description:
-		"Encuentra tu auto soñado con reseñas de usuarios, herramientas inteligentes y datos de precios.",
+		"Encuentra tu auto soñado con reseñ	as de usuarios, herramientas inteligentes y datos de precios.",
 };
 
 export default function RootLayout({
@@ -25,8 +22,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${poppins.variable}`}>
-			<body className={`${inter.className} font-sans`}>
+		<html lang="en" className={poppins.variable}>
+			<body className={`font-poppins ${poppins.className}`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

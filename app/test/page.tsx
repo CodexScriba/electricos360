@@ -1,18 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Navbar2 from "./test";
 
-const Page = () => {
-	return (
-		<>
-			<div>
-				<Navbar />
-			</div>
-			<div>
-				<Navbar2 />
-			</div>
-		</>
-	);
+const Test = () => {
+	return <div>Test: a, checking if poppins it's being applied site wide. </div>;
 };
 
-export default Page;
+export default Test;
