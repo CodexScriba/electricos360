@@ -10,7 +10,7 @@ interface NavbarLogoProps {
 
 const NavbarLogo: React.FC<NavbarLogoProps> = ({ src, alt, width, height }) => {
 	return (
-		<Link href="/" className="flex items-center gap-2">
+		<Link href="/" className="flex items-center gap-2" prefetch={false}>
 			<Image
 				src={src}
 				alt={alt}
