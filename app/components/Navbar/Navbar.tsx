@@ -161,7 +161,7 @@ export default function Navbar() {
 						<FaGlobe className="w-6 h-6" />
 						<span className="sr-only">Location</span>
 					</Button>
-					<Button variant="default">Iniciar Sesión / Registrarse</Button>
+					<Button variant="default">Ingresar / Registrarse</Button>
 				</div>
 			</div>
 		</header>
